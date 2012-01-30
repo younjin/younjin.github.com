@@ -32,7 +32,7 @@ body { font-family: 'Playfair' Georgia; color: #444; }
 
 /* //-- header, body, footer -- */
 #hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
-#hd h2 { letter-spacing: 2px; }
+#hd h2 { letter-spacing: 2px; font-style: italic; }
 #ft { margin-bottom: 2em; }
 
 /* //-- footer -- */
@@ -42,7 +42,7 @@ body { font-family: 'Playfair' Georgia; color: #444; }
 
 /* //-- core typography and style -- */
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
-h2 { font-size: 152% }
+h2 { font-size: 162% }
 h3, h4 { font-size: 122%; }
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
@@ -53,7 +53,7 @@ li { line-height: 24px; border-bottom: 1px solid #ccc; }
 p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; text-align:right; }
-.first h2 { font-style: italic; }
+.first h3 { font-style: italic; }
 .last { border-bottom: 0 }
 
 
@@ -66,7 +66,7 @@ p.enlarge span { color: #000 }
 .job, .proj { margin-bottom: 1em; padding-bottom: 1em; }
 .job { position: relative; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
-.job p { margin: 0.75em 0 3em 0; }
+.job p { margin: 0.75em 0 1em 0; }
 
 .last { border: none; }
 .skills-list {  }
@@ -82,5 +82,3 @@ p.enlarge span { color: #000 }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
-
-
