@@ -6,17 +6,17 @@
 /* Font styles */
 
 @font-face {
-    font-family: 'Playfair';
-    src: url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url('../font/PlayfairDisplay-Italic.woff') format('woff'), url('../font/PlayfairDisplay-Italic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Playfair';
-    src: url('../font/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-family: 'Playfair Display';
+    font-style: normal;
     font-weight: normal;
-    font-style: italic;
+    src: local('Playfair Display'), local('PlayfairDisplay'), url('../font/PlayfairDisplay-Regular.woff') format('woff'), url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
 .yui-gc {
@@ -25,7 +25,7 @@
 
 /* //-- yui-grids style overrides -- */
 html {background-image: url(../img/dvsup.png);}
-body { font-family: 'Playfair' Georgia; color: #444; }
+body { font-family: 'Playfair Display'; color: #444; }
 #inner { padding: 10px 80px; margin: 80px auto; background-image: url("../img/groovepaper.png"); border-color: #666; border-width: 3px; border-style: solid;
 -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius:2px; }
 .yui-gf { margin-bottom: 2em; border-bottom: 1px solid #ccc; }
