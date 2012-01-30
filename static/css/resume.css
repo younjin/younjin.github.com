@@ -82,3 +82,15 @@ p.enlarge span { color: #000 }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
+
+/* Print-specific stuff */
+@media print {
+    #pdf {
+        display: none;
+    }
+
+    .yui-gf * {
+        page-break-before: avoid;
+        page-break-after: avoid;
+    }
+}
