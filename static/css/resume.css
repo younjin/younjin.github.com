@@ -86,11 +86,18 @@ p.enlarge span { color: #000 }
 /* Print-specific stuff */
 @media print {
     #pdf {
-        display: none;
+        visibility: hidden;
     }
 
-    .yui-gf * {
-        page-break-before: avoid;
-        page-break-after: avoid;
+    .yui-gf {
+        page-break-inside: avoid;
+    }
+
+    .yui-gf.side-projects {
+        page-break-after: always;
+    }
+
+    .yui-gf.work-experience {
+        page-break-before: always;
     }
 }
