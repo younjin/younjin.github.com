@@ -90,6 +90,14 @@ p.enlarge span { color: #000 }
         visibility: hidden;
     }
 
+    #inner { padding: 0 0;
+    margin: 0 0;
+    border-width: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    }
+
     .yui-gf {
         page-break-inside: avoid;
     }
@@ -100,5 +108,9 @@ p.enlarge span { color: #000 }
 
     .yui-gf.work-experience {
         page-break-before: always;
+    }
+    
+    .noprintborder {
+        border-bottom: none;
     }
 }
