@@ -63,9 +63,11 @@ p.enlarge span { color: #000 }
   margin-bottom: 20px;
 }
 
-.job, .proj { margin-bottom: 1em; padding-bottom: 1em; }
+.job, .proj, .award.last { margin-bottom: 1em; padding-bottom: 1em; }
+.award { margin-bottom: 0.5em; padding-bottom: 0.5em; }
 .job { position: relative; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
+.award h4 { position: absolute; top: 0; right: 0 }
 .job p { margin: 0.75em 0 1em 0; }
 
 .last { border: none; }
@@ -75,6 +77,8 @@ p.enlarge span { color: #000 }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
 .proj { width: 32%; float: left }
 .proj h2 { margin-bottom: 6px; }
+
+.award { position: relative; }
 
 #srt-ttab { margin-bottom: 100px; text-align: center;  }
 #srt-ttab img.last { margin-top: 20px }
