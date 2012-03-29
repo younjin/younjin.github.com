@@ -45,35 +45,20 @@ table {
 /* End of reset code */
 
 @font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('../font/league_gothic.eot');
-    src: local('â˜º'), url('../font/league_gothic.woff') format('woff'), url('../font/league_gothic.ttf') format('truetype'), url('../font/league_gothic.svg') format('svg');
+    font-family: 'Merriweather';
+    src: local('â˜º'), url('../font/Merriweather.woff') format('woff'), url('../font/Merriweather-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url('../font/PlayfairDisplay-Italic.woff') format('woff'), url('../font/PlayfairDisplay-Italic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Playfair Display'), local('PlayfairDisplay'), url('../font/PlayfairDisplay-Regular.woff') format('woff'), url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
 html {background-image: url(../img/dvsup.png);}
-body { font-family: 'LeagueGothicRegular'; color: #444; }
-h1, .content { padding: 10px 80px;
-margin: 80px auto;
+body { font-family: 'Merriweather'; 
+width: auto;
+padding: 10px;
+margin: 120px auto;
+width: 360px;
 background-image: url("../img/groovepaper.png");
-border-color: #666;
-border-width: 3px;
-border-style: solid;
+background-color: #FFF;
 -webkit-border-radius: 2px;
 -moz-border-radius: 2px;
 border-radius:2px;
@@ -81,11 +66,9 @@ margin-bottom: 2em;
 border-bottom: 1px solid #ccc;}
 
 h1.title {
-    padding: 40px;
-    background-color: #999;
     color: #000;
-    font-size: 48px;
-    font-family: "LeagueGothicRegular", arial, sans-serif;
+    font-size: 42px;
+    font-family: "Merriweather", serif;
     max-width: 400px;
     margin: auto;
     margin-top: 60px;
@@ -93,16 +76,9 @@ h1.title {
 }
 
 .content {
-    font-family: 'Droid Sans', sans-serif;
-    max-width: 400px;
+    font-family: 'Merriweather', serif;
     margin: auto;
-    padding: 40px;
-    background-color: #666;
-    margin-top: 20px;
-}
-
-.job .links {
-    text-decoration: none;
+    padding: 20px;
 }
 
 .content > * {
@@ -113,11 +89,13 @@ h1.title {
     margin: 5px 0;
 }
 
+.content .links li.last {
+    margin-top: 30px;
+}
+
 .content a {
-    font-family: 'LeagueGothicRegular';
-    font-size: 20px;
-    /*text-decoration: none;*/
-    color: #333;
+    font-family: 'Merriweather';
+    color: #000;
 }
 
 .content .links {

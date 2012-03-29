@@ -26,7 +26,7 @@
 /* //-- yui-grids style overrides -- */
 html {background-image: url(../img/dvsup.png);}
 body { font-family: 'Playfair Display'; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background-image: url("../img/groovepaper.png"); border-color: #666; border-width: 3px; border-style: solid;
+#inner { padding: 10px 80px; margin: 80px auto; background-image: url("../img/subtle_freckles.png"); border-color: #666; border-width: 3px; border-style: solid;
 -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius:2px; }
 .yui-gf { margin-bottom: 2em; border-bottom: 1px solid #ccc; }
 
@@ -44,6 +44,7 @@ body { font-family: 'Playfair Display'; color: #444; }
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
 h2 { font-size: 162% }
 h3, h4 { font-size: 122%; }
+//* .job h2 a {font-weight: bold; text-decoration: none;} *//
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #555 }
@@ -55,6 +56,8 @@ p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; text-align:right; }
 .first h3 { font-style: italic; }
 .last { border-bottom: 0 }
+
+.summary {font-size: 115%; }
 
 
 /* //-- section styles -- */
