@@ -1,7 +1,24 @@
-.msg { padding: 10px; background: #222; position: relative; }
-.msg h1 { color: #fff;  }
-.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
-.msg a:hover { background: #266400; }
+.msg {
+    padding: 10px;
+    background: #222;
+    position: relative;
+}
+
+.msg h1 {
+    color: #fff;
+}
+
+.msg a {
+    margin-left: 20px;
+    background: #408814;
+    color: #FFF;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.msg a:hover {
+    background: #266400;
+}
 
 /* Font styles */
 
@@ -23,28 +40,77 @@
   padding: 0 30px;
 }
 
-/* //-- yui-grids style overrides -- */
-html {background-image: url(../img/dvsup.png);}
-body { font-family: 'Playfair Display'; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background-image: url("../img/subtle_freckles.png"); border-color: #666; border-width: 3px; border-style: solid;
--webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius:2px; }
-.yui-gf { margin-bottom: 2em; border-bottom: 1px solid #ccc; }
+/* yui-grids style overrides */
+html {
+background-image: url(../img/dvsup.png);
+}
 
-/* //-- header, body, footer -- */
-#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
-#hd h2 { letter-spacing: 2px; font-style: italic; }
-#ft { margin-bottom: 2em; }
+body {
+    font-family: 'Playfair Display';
+    color: #444;
+}
 
-/* //-- footer -- */
-#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
-#ft p { margin-bottom: 0; text-align: center;   }
-#ft a#shuriken { margin: 10px ; display:inline-block; }
+#inner {
+    padding: 10px 80px;
+    margin: 80px auto;
+    background-color:#FFF;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius:2px;
+}
 
-/* //-- core typography and style -- */
-#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
-h2 { font-size: 162% }
-h3, h4 { font-size: 122%; }
-//* .job h2 a {font-weight: bold; text-decoration: none;} *//
+.yui-gf {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+/* header & body */
+#hd {
+    margin: 2.5em 0 3em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+#hd h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+/* footer */
+#ft {
+    margin-bottom: 2em;
+    padding: 1em 0 5em 0;
+    font-size: 92%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+#ft p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#ft a#shuriken {
+    margin: 10px ;
+    display:inline-block;
+}
+
+/* core typography and style */
+#hd h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 162%
+}
+
+h3, h4 {
+    font-size: 122%;
+}
+
+/* .job h2 a {font-weight: bold; text-decoration: none;} */
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #555 }
@@ -60,7 +126,7 @@ p.enlarge span { color: #000 }
 .summary {font-size: 115%; }
 
 
-/* //-- section styles -- */
+/* section styles */
 
 #pdf{
   margin-bottom: 20px;
@@ -81,21 +147,33 @@ p.enlarge span { color: #000 }
 .proj { width: 32%; float: left }
 .proj h2 { margin-bottom: 6px; }
 
-.award { position: relative; }
+.award {
+    position: relative;
+}
 
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
+#srt-ttab {
+    margin-bottom: 100px; text-align: center;
+}
 
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width:80.2%;}
-.yui-gf div.first{width:12.3%;}
+#srt-ttab img.last {
+    margin-top: 20px
+}
+
+/* override to force 1/8th width grids */
+.yui-gf .yui-u{
+    width:80.2%;
+}
+
+.yui-gf div.first{
+    width:12.3%;
+}
 
 /* Print-specific stuff */
 
 @media print {
     #pdf {
         visibility: hidden;
-    }
+}
 
     #inner { padding: 0 0;
     margin: 0 0;
