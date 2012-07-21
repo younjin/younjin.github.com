@@ -27,10 +27,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0; }
 
-@viewport {
-  width: device-width;
-}
-
 /**/
 
 @font-face {
@@ -40,20 +36,26 @@ table {
     font-style: normal;
 }
 
-html {background-image: url(../img/dvsup.png);}
+html {
+    background-image: url(../img/dvsup.png);
+    min-width: 500px;
+}
 
-body { font-family: 'Merriweather'; 
+body {
+    font-family: 'Merriweather'; 
     width: auto;
     padding: 10px;
     margin: 120px auto;
     width: 360px;
-    background-image: url("../img/groovepaper.png");
     background-color: #FFF;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius:2px;
     margin-bottom: 2em;
-    border-bottom: 1px solid #ccc;}
+    border-left: 40px;
+    border-right: 40px;
+    border-bottom: 1px solid #ccc;
+}
 
 h1.title {
     color: #000;
