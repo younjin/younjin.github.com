@@ -129,20 +129,23 @@
           <div style='clear:both'></div>
           <div style='float:left;margin-top:10px;width:275px' id='final'>
           <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1"></div>
+          to post this on your friend's wall.
           </div>
       </div>
   </div>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=519602701393223";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
+  
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=519602701393223";
+    fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
+  </script>
+  
   <script src = 'jscode.js'></script>
   </body>
 </html>
