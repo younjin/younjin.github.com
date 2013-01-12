@@ -54,14 +54,11 @@ $('div.btn-group .btn').click(function(){
   selection = $('input[name=radio-btn-ctrl]:checked').val();
 });
 
-
-$("#friendselector").jfmfs();
-
-
-function selectfriend() {
+$('#friendselector').click(function() {
 FB.login(function(response) {
    if (response.authResponse) {
      console.log('Welcome!  Fetching your information.... ');
+     $("#friendselector").jfmfs();
      FB.api('/me', function(response) {
        console.log('Good to see you, ' + response.name + '.');
      });
