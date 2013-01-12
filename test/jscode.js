@@ -75,15 +75,16 @@ console.log ('t');
 var friendSelector = $("#friendselector").data('jfmfs');
 var friendIds = friendSelector.getSelectedIds();
 var msgs = $("#final").html();
+console.log("friendIds = " + friendIds);
 FB.api('/' + friendIds[0] + '/feed', 'post', {message: msgs}, function(response)
             {
                 if (!response || response.error)
                 {
-                    alert('Posting error occured');
+                    console.log('Posting error occured');
                 }
                 else
                 {
-                    alert('Success - Post ID: ' + response.id);
+                    console.log('Success - Post ID: ' + response.id);
                 }
             });
 });
