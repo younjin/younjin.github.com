@@ -75,11 +75,7 @@ console.log ('t');
 var friendSelector = $("#jfmfs-container").data('jfmfs');
 var friendIds = friendSelector.getSelectedIds();
 var msgs = $("#final").html();
-FB.api(friendIds[0]+'/feed', {
-  message: msgs
-            });
-
-            FB.api('/FRIEND_ID/feed', 'post', opts, function(response)
+FB.api('/' + friendIds[0] + '/feed', 'post', {message: msgs}, function(response)
             {
                 if (!response || response.error)
                 {
@@ -90,4 +86,4 @@ FB.api(friendIds[0]+'/feed', {
                     alert('Success - Post ID: ' + response.id);
                 }
             });
-})
+});
