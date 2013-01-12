@@ -68,3 +68,32 @@ FB.login(function(response) {
    }
  }, {scope: 'publish_stream'});
 })
+
+
+$('#b6').click(function() {
+console.log ('t');
+var friendSelector = $("#jfmfs-container").data('jfmfs');
+var friendIds = friendSelector.getSelectedIds();
+var msgs = $("#final").html();
+FB.api(friendIds[0]+'/feed', {
+  message: msgs
+            });
+
+            FB.api('/FRIEND_ID/feed', 'post', opts, function(response)
+            {
+                if (!response || response.error)
+                {
+                    alert('Posting error occured');
+                }
+                else
+                {
+                    alert('Success - Post ID: ' + response.id);
+                }
+            });
+
+
+
+
+
+
+})
