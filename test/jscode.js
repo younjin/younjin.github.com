@@ -55,6 +55,7 @@ $('div.btn-group .btn').click(function(){
 });
 
 $('#friendselector').click(function() {
+console.log ('s');
 FB.login(function(response) {
    if (response.authResponse) {
      console.log('Welcome!  Fetching your information.... ');
