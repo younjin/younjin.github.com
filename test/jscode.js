@@ -54,7 +54,7 @@ $('div.btn-group .btn').click(function(){
   selection = $('input[name=radio-btn-ctrl]:checked').val();
 });
 
-$('#friendselector').click(function() {
+$('#b5').click(function() {
 console.log ('s');
 FB.login(function(response) {
    if (response.authResponse) {
