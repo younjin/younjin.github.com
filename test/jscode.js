@@ -39,11 +39,11 @@ $(document).ready(function() {
       $("#cb3").attr("disabled", "disabled"); 
       $('.nav-tabs').button()
       if (selection == 1) {
-          $('#final').html("Dear " +$('#t1').val()+ ", <br><br>Remember Mr. Teddy? Mr. Teddy doesn't " +$('#t2').val()+" ... <br><br>Sincerely, <br> --  " +$('#t3').val());
+          $('#final').html("Dear " +$('#t1').val()+ ", <br><br>It has come to my attention that you " +$('#t2').val()+" a lot. Please desist, or more threatening messages will follow. <br><br>Your loving roommate,<br><br>--  " +$('#t3').val());
               } else if (selection == 2) {
-                  $('#final').html("Dear " +$('#t1').val()+ " <br><br>... " +$('#t2').val()+" ... <br><br> Sincerely, <br> --  " +$('#t3').val());
+                  $('#final').html("Dear " +$('#t1').val()+ ", <br><br>Cease to " +$('#t2').val()+" immediately.<br>Side-effects of disobeying may include dizziness, nausea, and death.<br><br> Kisses!<br><br> --  " +$('#t3').val());
               } else if (selection == 3) {
-                  $('#final').html("Dear " + $('#t1').val()+ ",<br><br> Lately, your tendency to " + $('#t2').val()+" has made me consider taking up homicide as a hobby...and you've been voluntold! Congratulations! <br><br>(Remember, I know where you sleep at night...) <br><br>With love,<br><br>-- " +$('#t3').val());
+                  $('#final').html("Dear " + $('#t1').val()+ ",<br><br> Your tendency to " + $('#t2').val()+" has resulted in the untimely and unfortunate dismemberment of your beloved teddy bear, Mr. Teddy. Please collect his remains from the toilet, the neighbourhood coyotes, and the manure pile.<br>I am always available to be your rock during these trying times.<br><br>Sincere regrets,<br><br>-- " +$('#t3').val());
               }
           })
       });
