@@ -59,7 +59,7 @@ console.log ('s');
 FB.login(function(response) {
    if (response.authResponse) {
      console.log('Welcome!  Fetching your information.... ');
-     $("#friendselector").jfmfs();
+     $("#friendSelector").jfmfs();
      FB.api('/me', function(response) {
        console.log('Good to see you, ' + response.name + '.');
      });
@@ -72,7 +72,7 @@ FB.login(function(response) {
 
 $('#b6').click(function() {
 console.log ('t');
-var friendSelector = $("#jfmfs-container").data('jfmfs');
+var friendSelector = $("#friendselector").data('jfmfs');
 var friendIds = friendSelector.getSelectedIds();
 var msgs = $("#final").html();
 FB.api('/' + friendIds[0] + '/feed', 'post', {message: msgs}, function(response)
