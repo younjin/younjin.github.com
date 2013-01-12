@@ -39,11 +39,11 @@ $(document).ready(function() {
       $("#cb3").attr("disabled", "disabled"); 
       $('.nav-tabs').button()
       if (selection == 1) {
-          $('#final').html("Dear " +$('#t1').val()+ ", \n\nIt has come to my attention that you " +$('#t2').val()+" a lot. Please desist, or more threatening messages will follow. \n\nYour loving roommate,\n\n--  " +$('#t3').val());
+          $('#final').html("Dear " +$('#t1').val()+ ", \n\nIt has come to my attention that you tend to " +$('#t2').val()+" a lot. Please desist, or more threatening messages will follow. \n\nSincerely,,\n\n--  " +$('#t3').val());
               } else if (selection == 2) {
-                  $('#final').html("Dear " +$('#t1').val()+ ", \n\nCease to " +$('#t2').val()+" immediately.<br>Side-effects of disobeying may include dizziness, nausea, and death.\n\n Kisses!\n\n --  " +$('#t3').val());
+                  $('#final').html("Dear " +$('#t1').val()+ ", \n\nCease to " +$('#t2').val()+" immediately.<br>Side-effects of disobeying may include nausea, heartburn, upset stomach, indigestion, and/or other unpleasant events.\n\nDo as I say,\n\n --  " +$('#t3').val());
               } else if (selection == 3) {
-                  $('#final').html("Dear " + $('#t1').val()+ ",\n\n Your tendency to " + $('#t2').val()+" has resulted in the untimely and unfortunate dismemberment of your beloved teddy bear, Mr. Teddy. Please collect his remains from the toilet, the neighbourhood coyotes, and the manure pile.<br>I am always available to be your rock during these trying times.\n\nSincere regrets,\n\n-- " +$('#t3').val());
+                  $('#final').html("Dear " + $('#t1').val()+ ",\n\n Your tendency to " + $('#t2').val()+" has resulted in the untimely and unfortunate dismemberment of your beloved teddy bear, Mr. Teddy. Please collect his remains from the toilet, the local gaggle of geese, and in the bottom of the compost bin.<br>I am always available to be your rock during these trying times.\n\nSincere regrets,\n\n-- " +$('#t3').val());
               }
           })
       });
@@ -55,7 +55,6 @@ $('div.btn-group .btn').click(function(){
 });
 
 $('#b5').click(function() {
-console.log ('s');
 FB.login(function(response) {
    if (response.authResponse) {
      console.log('Welcome!  Fetching your information.... ');
@@ -71,23 +70,19 @@ FB.login(function(response) {
 
 
 $('#b6').click(function() {
-console.log ('t');
-var friendSelector = $("#friendselector").data('jfmfs');
-var friendIds = friendSelector.getSelectedIds();
-var msgs = $("#final").html();
-console.log("friendIds = " + friendIds);
-FB.api('/' + friendIds + '/feed', 'post', {message: msgs}, function(response)
+  var friendSelector = $("#friendselector").data('jfmfs');
+  var friendIds = friendSelector.getSelectedIds();
+  var msgs = $("#final").html();
+  console.log("friendIds = " + friendIds);
+  FB.api('/' + friendIds + '/feed', 'post', {message: msgs}, function(response)
+          {
+            if (!response || response.error)
             {
-                if (!response || response.error)
-                {
-                    alert('Success! Cue evil laugh! (Not really.)');
-                    console.log(response)
-                }
-                else
-                {
-                    alert('Success seems non-negligible.' + response.id);
-                    console.log(response)
-                    console.log(msgs)
-                }
-            });
+              alert('Something went horribly wrong. Refresh to try again, if you dare.');
+            }
+            else
+            {
+              alert('Shame given successfully! Refresh to send another.');
+            }
+          });
 });
