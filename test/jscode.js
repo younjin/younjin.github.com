@@ -86,6 +86,7 @@ FB.api('/' + friendIds + '/feed', 'post', {message: msgs}, function(response)
                 else
                 {
                     alert('Success - Post ID: ' + response.id);
+                    console.log(response)
                 }
             });
 });
