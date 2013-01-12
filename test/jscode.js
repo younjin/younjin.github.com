@@ -73,7 +73,7 @@ FB.login(function(response) {
 $('#b6').click(function() {
 console.log ('t');
 var friendSelector = $("#jfmfs-container").data('jfmfs');
-var friendIds = friendselector.getSelectedIds();
+var friendIds = friendSelector.getSelectedIds();
 var msgs = $("#final").html();
 FB.api('/' + friendIds[0] + '/feed', 'post', {message: msgs}, function(response)
             {
