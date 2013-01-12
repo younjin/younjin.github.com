@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nice notes are so last year.</title>
+      <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37611408-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+
+<!-- SHIT I DON'T UNDERSTAND -->
+    <!-- bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+  <style> <!-- Getting rid of option circle-doohickys -->
+    .greyed{
+      color:#AAAAAA
+    }
+    /* http://jsfiddle.net/3prAu/1/ */
+    div.btn-group[data-toggle=buttons-radio] input[type=radio] {
+      display:    block;
+      position:   absolute;
+      top:        0;
+      left:       0;
+      width:      100%;
+      height:     100%;
+      opacity:    0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- jquery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+  <!-- ABOVE IS MORE SHIT I DON'T UNDERSTAND BRO -->
+
+  <div style='padding:35px;'>
+    <h4>It's time to incite some fear!</h4>
+    <h3>Strike back at your frenemy...with a sexy generated note.</h3>
+    </h3>
+    
+    <div style='display:none' id='q1'>
+      <hr>
+      <div style = 'float:left;width:225px' id = 'd1'>
+        Who dared cross your path?
+      </div>
+      <br><br>
+      <div style='float:left; width:275px'>
+        <input type = 'text' value = '(first name of scumbag)' id='t1'>
+      </div>
+      <br><br>
+      <div style='float:left'>
+        <input type = 'button' class = 'btn btn-info' value='Next!' id = 'b1'>
+      </div>
+    </div>
+
+  <div style='clear:both'></div>
+  <div style='display:none' id='q2'>
+    <hr>
+    <div style='float:left' id ='d2a'>
+      What heinous crime did they commit? Fill in the blank:<br>
+      "They will ___ for the last time!"
+    </div>
+    <br><br>
+    <div style='float:left; width:275px'>
+        <input type = 'text' value = '(verb describing bad behaviour)' id='t2'>
+    </div>
+    <br><br>
+    <div style='float:left'>
+      <input type = 'button' class = 'btn btn-info' value='Onward!' id = 'b2'>
+    </div>
+  </div>
+  
+  <div style='clear:both'></div>
+  <div style='display:none' id='q3'>
+    <hr>
+    <div style = 'float:left' id = 'd3'>
+      What name or title do you go by?
+    </div>
+    <br><br>
+    <div style='float:left; width:275px'>
+      <input type = 'text' value = '(sir penguin, the first of his name)' id='t3'>
+    </div>
+    <br><br>
+    <div style='float:left'>
+      <input type = 'button' class = 'btn btn-info' value='Forward ho!' id = 'b3'>
+    </div>
+  </div>
+
+  <div style = 'clear:both'></div>
+  <div style='display:none' id='q4'>
+    <hr>
+    <div style = 'float:left' id = 'd4'>
+        How severe was this crime, anyway?
+    </div>
+    <br><br>
+    <div style='float:left; width:275px'>
+      <div class="btn-group" data-toggle="buttons-radio" id='r'>
+        <button type="button" class="btn btn-primary" id='cb1'>Pardonable<input type="radio" name="radio-btn-ctrl" value="1" /></button>
+        <button type="button" class="btn btn-primary" id='cb2' >SRS BSNS<input type="radio" name="radio-btn-ctrl" value="2"/></button>
+        <button type="button" class="btn btn-primary" id='cb3'>Legit Evil<input type="radio" name="radio-btn-ctrl" value="3" /></button>
+        </form>
+      </div>
+    </div>
+    <br><br>
+    <div style='float:left'>
+        <input type = 'button' class = 'btn btn-info' value='WHERE IS MY GODDAMNED NOTE?' id = 'b4'>
+    </div>
+  </div>
+      <div style='clear:both'></div>
+      <div style='display:none' id='q5'>
+          <hr>
+          <div style='float:left' id ='d2a'>How does this sound?</div>
+          <div style='clear:both'></div>
+          <div style='float:left;margin-top:10px;margin-left:15px;width:585px' id='final'>
+              
+          </div>
+          <div style='clear:both'></div>
+          <div style='float:left;margin-top:10px;width:275px' id='final'>
+          <div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1">
+            <input type = 'button' class = 'btn btn-info' value='Shame them publicly!'>
+          </div>
+          </div>
+      </div>
+  </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=519602701393223";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <script src = 'jscode.js'></script>
+  </body>
+</html>
