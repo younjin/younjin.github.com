@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<!-- Forgive the extreme jankiness of this code. I may clean it up...someday.-->
+
+<html lang="en">
+  <head>
+    <title>Aggressive Note&trade;</title>
+      <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37611408-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+
+<!-- SHIT I DON'T UNDERSTAND -->
+    <!-- bootstrap -->
+    <link href='bootstrap.css' rel="stylesheet">
+
+  <style> <!-- Getting rid of option circle-doohickys -->
+    .greyed{
+      color:#AAAAAA
+    }
+    /* http://jsfiddle.net/3prAu/1/ */
+    div.btn-group[data-toggle=buttons-radio] input[type=radio] {
+      display:    block;
+      position:   absolute;
+      top:        0;
+      left:       0;
+      width:      100%;
+      height:     100%;
+      opacity:    0;
+    }
+  </style>
+
+     
+
+    <!-- javascript that will initiate jQuery and the LocalScroll plugin -->
+
+
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '519602701393223', // App ID from the App Dashboard
+      channelUrl : 'http://kimyounjin.com/test/', // Channel File for x-domain communication
+      status     : true, // check the login status upon init?
+      cookie     : true, // set sessions cookies to allow your server to access the session?
+      xfbml      : true  // parse XFBML tags on this page?
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+
+  };
+
+  // Load the SDK's source Asynchronously
+  // Note that the debug version is being actively developed and might 
+  // contain some type checks that are overly strict. 
+  // Please report such bugs using the bugs tool.
+  (function(d, debug){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "https://connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document, /*debug*/ false));
+</script>
+
+  <!-- jquery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+
+  <script src="jquery.facebook.multifriend.select.js"></script>
+<link rel="stylesheet" href="jquery.facebook.multifriend.select.css" />
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+  
+  
+  <!-- Load ScrollTo -->
+  <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+  <!-- Load LocalScroll -->
+  <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+  
+  <script type="text/javascript">// <![CDATA[
+    // When the document is loaded...
+
+
+
+    $(document).ready(function()
+    {
+      
+      $('#b4').click(function() {
+        console.log('test');
+        setTimeout("$('body').scrollTop(300);", 1780);
+      });
+ 
+// could add animation here to make it prettier
+
+    });
+ 
+// ]]></script>
+  
+  <!-- ABOVE IS MORE SHIT I DON'T UNDERSTAND BRO -->
+
+  <div style='padding:25px;padding-bottom:50px;'>
+    <h5>Passive-aggressive notes are sooo last year.</h5>
+    <h4>Why not vent your grievance with a sexy Aggressive Note&trade;?</h4>
+
+    <div style='display:none' id='q1'>
+      <hr>
+      <div style = 'float:left;width:225px' id = 'd1'>
+        Who deserves a good smack?
+      </div>
+      <br><br>
+      <div style='float:left; width:275px'>
+        <input type = 'text' value = '(first name of scumbag)' id='t1'>
+      </div>
+      <br><br>
+      <div style='float:left'>
+        <input type = 'button' class = 'btn btn-info' value='Next!' id = 'b1'>
+      </div>
+    </div>
+    
+    <div style='clear:both'></div>
+    <div style='display:none' id='q2'>
+      <hr>
+      <div style='float:left;' id ='d2a'>
+        What heinous crime did they commit? Fill in the blank: "They will ___ for the last time!"
+      </div>
+      <br><br>
+      <div style='float:left; width:275px'>
+          <input type = 'text' value = '(verb describing bad behaviour)' id='t2'>
+      </div>
+      <br><br>
+      <div style='float:left'>
+        <input type = 'button' class = 'btn btn-info' value='Onward!' id = 'b2'>
+      </div>
+    </div>
+    <div id="#friendselector"></div>
+  <div style='clear:both'></div>
+  <div style='display:none' id='q3'>
+    <hr>
+    <div style = 'float:left' id = 'd3'>
+      What name or title do you go by?
+    </div>
+    <br><br>
+    <div style='float:left; width:275px'>
+      <input type = 'text' value = '(sir penguin, the first of his name)' id='t3'>
+    </div>
+    <br><br>
+    <div style='float:left'>
+      <input type = 'button' class = 'btn btn-info' value='Forward ho!' id = 'b3'>
+    </div>
+  </div>
+
+  <div style = 'clear:both'></div>
+  <div style='display:none' id='q4'>
+    <hr>
+    <div style = 'float:left' id = 'd4'>
+        How severe was this crime, anyway?
+    </div>
+    <br><br>
+    <div id='msg1' style='float:left; width:275px'>
+      <div class="btn-group" data-toggle="buttons-radio" id='r'>
+        <button type="button" class="btn btn-primary" id='cb1'>Pardonable<input type="radio" name="radio-btn-ctrl" value="1" /></button>
+        <button type="button" class="btn btn-primary" id='cb2' >Maim-worthy<input type="radio" name="radio-btn-ctrl" value="2"/></button>
+        <button type="button" class="btn btn-primary" id='cb3'>Downright Evil<input type="radio" name="radio-btn-ctrl" value="3" /></button>
+        </form>
+      </div>
+    </div>
+    <br><br>
+
+    
+    <div style='float:left'>
+      <input type = 'button' class = 'btn btn-info' value='WHERE IS MY GODDAMNED NOTE?' id = 'b4'>
+     </div>    
+    
+  
+      <div style='clear:both'></div>
+      <div style='display:none' id='q5'>
+          <hr>
+          <div style='float:left' id ='d2a'>Scathing enough for you?</div>
+          <div style='clear:both'></div>
+          <div style='float:left;margin-top:10px;margin-left:15px;margin-bottom:15px;width:585px' id='final'></div>
+          <div style='clear:both'></div>
+<!--          <button onclick="selectfriend()" value="Make your vengeance complete! Post now!"> -->
+          <div id="friendselector"></div>
+          <div style='float:left'>
+            <input type = 'button' class = 'btn btn-info' value='Pick your enemy.' id = 'b5' onclick="">
+            <input type = 'button' class = 'btn btn-info' value='Now make their humiliation public!' id = 'b6' onclick = "">
+          </div>
+      </div>
+      
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div id="fb-root"></div>
+
+  
+  </body>
+  
+    <script src = 'jscode.js'></script>
+  
+</html>
