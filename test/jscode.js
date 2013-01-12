@@ -79,7 +79,7 @@ FB.api('/' + friendIds[0] + '/feed', 'post', {message: msgs}, function(response)
             {
                 if (!response || response.error)
                 {
-                    alert('Posting error occured');
+                    alert('Success! Cue evil laugh!');
                 }
                 else
                 {
