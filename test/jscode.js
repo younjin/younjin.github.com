@@ -80,7 +80,8 @@ FB.api('/' + friendIds + '/feed', 'post', {message: msgs}, function(response)
             {
                 if (!response || response.error)
                 {
-                    alert('Success! Cue evil laugh!');
+                    alert('Success! Cue evil laugh! (Not really.)');
+                    console.log(response)
                 }
                 else
                 {
