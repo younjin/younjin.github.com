@@ -85,7 +85,7 @@ FB.api('/' + friendIds + '/feed', 'post', {message: msgs}, function(response)
                 }
                 else
                 {
-                    alert('Success seems non-negligible.');
+                    alert('Success seems non-negligible.' + response.id);
                     console.log(response)
                     console.log(msgs)
                 }
