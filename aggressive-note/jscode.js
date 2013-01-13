@@ -1,3 +1,5 @@
+// note to self: reformat later.
+
 var slideSpeed = 1500; // milliseconds
 function fadeDown(section) {
   $('#' + section).stop(true, true).fadeIn({ duration: slideSpeed, queue: false }).css('display', 'none').slideDown(slideSpeed);
@@ -41,7 +43,7 @@ $(document).ready(function() {
       if (selection == 1) {
           $('#final').html("Dear " +$('#t1').val()+ ", \n\nIt has come to my attention that you tend to " +$('#t2').val()+" a lot. Please desist, or more threatening messages will follow. \n\nSincerely,,\n\n--  " +$('#t3').val());
               } else if (selection == 2) {
-                  $('#final').html("Dear " +$('#t1').val()+ ", \n\nCease to " +$('#t2').val()+" immediately.\nSide-effects of disobeying may include nausea, heartburn, upset stomach, indigestion, and...well, let's not talk about it.\n\nDo as I say,\n\n --  " +$('#t3').val());
+                  $('#final').html("Dear " +$('#t1').val()+ ", \n\nCease to " +$('#t2').val()+" immediately.\nSide-effects of disobeying may include nausea, heartburn, upset stomach, indigestion, and...well, you know the rest.\n\nDo as I say,\n\n --  " +$('#t3').val());
               } else if (selection == 3) {
                   $('#final').html("Dear " + $('#t1').val()+ ",\n\n Your tendency to " + $('#t2').val()+" has resulted in the untimely and unfortunate dismemberment of your beloved teddy bear, Mr. Teddy. Please collect his remains from the toilet, the local gaggle of geese, and in the bottom of the compost bin.\nI am always available to be your rock during these trying times.\n\nSincere regrets,\n\n-- " +$('#t3').val());
               }
