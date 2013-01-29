@@ -37,7 +37,7 @@
 }
 
 .yui-gc {
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 /* yui-grids style overrides */
@@ -51,8 +51,8 @@ body {
 }
 
 #inner {
-    padding: 10px 80px;
-    margin: 80px auto;
+    padding: 10px 50px;
+    margin: 50px auto;
     background-color:#FFF;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -66,7 +66,7 @@ body {
 
 /* header & body */
 #hd {
-    margin: 2.5em 0 3em 0;
+    margin: 2.5em 0 2.5em 0;
     padding-bottom: 1.5em;
     border-bottom: 1px solid #ccc;
 }
@@ -78,7 +78,7 @@ body {
 
 /* footer */
 #ft {
-    padding: 1em 0 5em 0;
+    padding: 1em 0 3em 0;
     font-size: 92%;
     border-top: 1px solid #ccc;
     text-align: center;
@@ -98,7 +98,7 @@ body {
 #hd h1 {
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 
 h2 {
