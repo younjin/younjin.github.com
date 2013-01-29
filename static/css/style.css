@@ -45,12 +45,12 @@ body {
     font-family: 'Merriweather'; 
     width: auto;
     padding: 10px;
-    margin: 120px auto;
-    width: 360px;
+    margin: 150px auto;
+    width: 300px;
     background-color: #FFF;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius:2px;
+    border-radius:10px;
     margin-bottom: 2em;
     border-left: 40px;
     border-right: 40px;
@@ -62,15 +62,14 @@ h1.title {
     font-size: 42px;
     font-family: "Merriweather", serif;
     max-width: 400px;
-    margin: auto;
-    margin-top: 60px;
+    margin: 20px auto;
     text-align: center;
 }
 
 .content {
     font-family: 'Merriweather', serif;
     margin: auto;
-    padding: 20px;
+    /* padding: 10px; */
 }
 
 .content > * {
@@ -82,7 +81,7 @@ h1.title {
 }
 
 .content .links li.last {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .content a {
