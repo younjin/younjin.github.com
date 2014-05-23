@@ -51,7 +51,7 @@ body {
 }
 
 #inner {
-    padding: 10px 50px;
+    padding: 6px 40px;
     margin: 50px auto;
     background-color:#FFF;
     -webkit-border-radius: 2px;
@@ -66,7 +66,7 @@ body {
 
 /* header & body */
 #hd {
-    margin: 2.5em 0 2.5em 0;
+    margin: 2em 0 2em 0;
     padding-bottom: 1.5em;
     border-bottom: 1px solid #ccc;
 }
@@ -98,7 +98,7 @@ body {
 #hd h1 {
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 11.2px;
 }
 
 h2 {
@@ -131,7 +131,7 @@ p.enlarge span { color: #000 }
   margin-bottom: 20px;
 }
 
-.job, .proj, .award.last { margin-bottom: 1em; padding-bottom: 1em; }
+.job, .proj, .award.last { margin-bottom: 0.5em; padding-bottom: 0.5em; }
 .award { margin-bottom: 0.5em; padding-bottom: 0.5em; }
 .job { position: relative; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
@@ -193,7 +193,7 @@ p.enlarge span { color: #000 }
     .yui-gf.work-experience {
         page-break-before: always;
     }
-    
+
     .noprintborder {
         border-bottom: none;
     }
