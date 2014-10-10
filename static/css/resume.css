@@ -60,7 +60,7 @@ body {
 }
 
 .yui-gf {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     border-bottom: 1px solid #ccc;
 }
 
@@ -136,7 +136,7 @@ p.enlarge span { color: #000 }
 .job { position: relative; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
 .award h4 { position: absolute; top: 0; right: 0 }
-.job p { margin: 0.75em 0 1em 0; }
+.job p { margin: 0.5em 0 0.5em 0; }
 
 .last { border: none; }
 .skills-list {  }
@@ -160,7 +160,7 @@ p.enlarge span { color: #000 }
 
 /* override to force 1/8th width grids */
 .yui-gf .yui-u{
-    width:80.2%;
+    width:85%;
 }
 
 .yui-gf div.first{
