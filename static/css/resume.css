@@ -144,7 +144,7 @@ p.enlarge span { color: #000 }
 .skills-list li { margin: 3px 0; padding: 3px 0; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
 .proj { width: 32%; float: left }
-.proj-foo { width: 25%; float: center }
+.proj-foo { width: 120px; float: center }
 .proj h2 { margin-bottom: 6px; }
 
 .award {
