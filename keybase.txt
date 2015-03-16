@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/younjin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kimyounjin.com
+  * I am younjin (https://keybase.io/younjin) on keybase.
+  * I have a public key with fingerprint 5018 6F18 1F5E C313 2C57  D48F 616D 569F 8966 A8D1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "50186f181f5ec3132c57d48f616d569f8966a8d1",
+            "host": "keybase.io",
+            "key_id": "616D569F8966A8D1",
+            "uid": "1bb817c0638e977af943f38e82cd5419",
+            "username": "younjin"
+        },
+        "merkle_root": {
+            "ctime": 1426546307,
+            "hash": "bec4554d59505243a9219f2be88b01af62dfdad1b1c301de1047effa61435a475e311c27089f460614f73cd9050d2c9d716faa1c1a3955960937403764afde70",
+            "seqno": 178132
+        },
+        "service": {
+            "hostname": "kimyounjin.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1426546442,
+    "expire_in": 157680000,
+    "prev": "6a2a5a85788a89b81fde710e95c3a015857befb14da033afbcc76980638d51bf",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFVkn1QFGUcxwEJ8AYFy2QyUjpHksRjn31flLeRE5kwZkIwxuh6dvfZY3m5hbvl
+4LyAbFTCEdGSSWXANJUoFDWdsDChQkVMvHAKAnqxCAWGsTGKicR2GZxy/3r2+X2e
+3/P9/r7PnnlzvAzeMD/jUKX0gce76w7vle5vMbiNvCK6jNFuo5AnI5uqr2wwHxmj
+jbnIxUMHMslKmE0RkSnHETbLRBqdyO6QFZtGYSbGxBhLI3VcPyzJNiuyF9hlvZeR
+wgBLS4AFEoUEAhC4QDEiyUo0oEWK5iSWo2nIikBrma041EduNc70tMiitqvxiRq/
+TucT2ESdL5opAJ5nASNgNMEijmGgxJGEpK1ZXBApEnA66ED2WUsupciWI9t0ufnI
+npuHLHZFmfEsqLJOABKnKZImMEYTBB3Z2hkeCSRFkSLFURiFkwTkcMBJOI9YlscA
+lGhclEQoAh4IBAZEBDCSQZIEaUASFCQZChEACDiDsZxE0pi2LTGEIHIYhYm4wIkM
+oCUIgQAgwVEUR2McwZAYwdAklETEYJoDByq0KZo4htUmWKr/252ygHTd+tQe5iXn
+z/ozCUq+dqzArqiKoORptWxVLYjWbauuAp0tRvxJy2wbCy/bRC21/8cKNPTRkZAk
+HmlEJQWyHVlknaAYmsW0T78HOfWMIA4pyFIMy0KW02LR5QMMcZRAQAxQWoVHEg9I
+EWIEASVeEBiaY/XoRArw0n9GCU0ntGotHbLVBtUiOzKWVvqE+np5G7z8HvPR362X
+YW7ww8e84HLQNN7sOOzJrq76i1navGtSLW6+9o7QNvxFaXx4RPe1zMiWSyNbb85r
+NB0ZCSurfPW84Y8AgxiX1j+WjD9l3bipfgt+1Ne6Pe74p6HihFDddyAiJ+HAkpFj
+TPv47qG+4riB5b/HplwZ6aheceuN/Z8EL4hyNoWsMJ5aWD+6eZ9Did9mtgqfqczq
+YeGtBp/6++tC+MBnff3nZGZW1IkV4x8+5w6+P+Ds2gm3j74+7Yl2nxv/uf0famzq
+dBOMCdiR/G3qjyVwis/ZPFr0y4ZDQ9218VU3PD0nmMs7lj0w3Yt2i7VBk9NrlfTi
+odioja7jZZYX+pZ7lS/tZ2JTQMSer7qz1Lvrk7a8/7nv5HDT89KJtsLEK4bunqio
++qHR+qs1vY27ycXerxGvmAeXgI6yueUlm1TT1cLURcuuD2TULV5zTLi10hxG5yRM
+JJ1NC1j468VxdvDvpJQvJ8kQJTYyybVo4ObLQb3DaV21NRl1f578qPPd0/vk2ipn
+1qWn68rv8rm3gzvVwIMtMdN777RidHNyuLDqzYYLh3tfavUNMu9oXPWN+d65G0c9
+a5zrfyu3rVRiWz3qWMzEi35HIp7M2uCfvH9+M/tEr9u/5cz17051DL5dURG6+vHS
+0CazY1vh1hpzj/zxWP+ZC+nz1wa2+1H9P7R9nXDwvQedu1Knvv/pomunf/jZ9Nt7
+zzc8M9L4Lw==
+=yeCk
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/younjin
+
+==================================================================
