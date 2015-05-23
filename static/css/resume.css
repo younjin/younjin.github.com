@@ -1,3 +1,10 @@
+a.nounder {
+    text-decoration: none;
+}
+a.nounder:hover {
+    text-decoration: underline;
+}
+
 .msg {
     padding: 10px;
     background: #222;
@@ -134,7 +141,7 @@ p.enlarge span { color: #000 }
 .job, .proj, .award.last { margin-bottom: 0.5em; padding-bottom: 0.5em; }
 .award { margin-bottom: 0.5em; padding-bottom: 0.5em; }
 .job { position: relative; border-bottom: 1px solid #ccc; }
-.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job h4 { position: absolute; top: 0.35em; right: 0; text-align: right; }
 .award h4 { position: absolute; top: 0; right: 0 }
 .job p { margin: 0.5em 0 0.5em 0; }
 
@@ -163,8 +170,17 @@ p.enlarge span { color: #000 }
     width:85%;
 }
 
+.yui-gf.thin {
+    margin-top: -12px;
+    margin-bottom: 8px;
+}
+
 .yui-gf div.first{
     width:12.3%;
+}
+
+.yui-u.smalllines h5 {
+    margin-bottom: 5px;
 }
 
 /* Print-specific stuff */
@@ -172,10 +188,10 @@ p.enlarge span { color: #000 }
 @media print {
     #pdf {
         visibility: hidden;
-}
+    }
 
     #inner { padding: 0 0;
-    margin: 0 0;
+    margin: -40px 0 0;
     border-width: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -196,5 +212,18 @@ p.enlarge span { color: #000 }
 
     .noprintborder {
         border-bottom: none;
+    }
+
+    #ft {
+        padding-bottom: 0;
+    }
+    #ft p {
+        text-align: left;
+    }
+
+    #ft a#shuriken {
+        display: block;
+        margin-top: -20px;
+        float: right;
     }
 }
