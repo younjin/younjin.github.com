@@ -118,7 +118,7 @@ h3, h4 {
 
 /* .job h2 a {font-weight: bold; text-decoration: none;} */
 h1, h2, h3, h4 { color: #333; }
-p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+p { font-size: 100%; line-height: 18px; }
 a { color: #555 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
