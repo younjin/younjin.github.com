@@ -1,2 +1,2 @@
 # younjin.github.com
-I will eventually add informative content here; in the meantime, [here](http://www.wimp.com/beingpenguins/)'s something to keep you occupied.
+I will eventually add informative content here; in the meantime, [here's something](http://www.wimp.com/beingpenguins/) to keep you occupied.
