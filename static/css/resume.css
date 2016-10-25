@@ -1,6 +1,12 @@
 a.nounder {
     text-decoration: none;
 }
+
+a.nounder {
+    text-decoration: none;
+    line-height: 19px;
+}
+
 a.nounder:hover {
     text-decoration: underline;
 }
@@ -217,6 +223,8 @@ p.enlarge span { color: #000 }
     #ft {
         padding-bottom: 0;
     }
+    
+    /*
     #ft p {
         text-align: left;
     }
@@ -226,4 +234,5 @@ p.enlarge span { color: #000 }
         margin-top: -20px;
         float: right;
     }
+    */
 }
