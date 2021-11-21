@@ -2,251 +2,242 @@
 <!-- This is a declaration! 
 It tells the browser that this page is written in HTML5!
 Woo fake haiku! -->
-
 <html>
 <!-- HEY BROWSER! THIS IS AN HTML DOCUMENT! -->
 
 <head>
-	<!-- This is apparently where you put the title, scripts, styles, and stuff. -->
-	
-	<title>Hire a Jinny</title>
-	<!-- Legend has it that I bake *great* cookies. -->
-
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<!-- This means my page is in UTF-8.
+    <!-- This is apparently where you put the title, scripts, styles, and stuff. -->
+    <title>Hire a Jinny</title>
+    <!-- Legend has it that I bake *great* cookies. -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- This means my page is in UTF-8.
 	This means I can share pretty letters like é (also emoji). -->
+    <!--	<meta name="keywords" content="" /> -->
+    <!--	<meta name="description" content="" /> -->
+    <!--	Not using these, so commented out. -->
+    <!-- CSS SHIT -->
+    <link rel="stylesheet" type="text/css" href="../static/css/reset-fonts-grids.css" media="all" />
+    <!--	Note to self: Essential CSS. Rewrite this shit one day. -->
+    <!-- CSS SHIT -->
+    <link rel="stylesheet" type="text/css" href="../static/css/resume.css" media="all" />
+    <!--	Note to self: Essential CSS. Rewrite this shit one day. -->
+    <!-- Google Analytics stuff -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    var pluginUrl =
+        '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-28481260-1']);
+    _gaq.push(['_setDomainName', 'kimyounjin.com']);
+    _gaq.push(['_trackPageview']);
 
-	<!--	<meta name="keywords" content="" /> -->
-	<!--	<meta name="description" content="" /> -->
-	<!--	Not using these, so commented out. -->
-	
-	<!-- CSS SHIT -->
-	<link rel="stylesheet" type="text/css" href="../static/css/reset-fonts-grids.css" media="all" />
-	<!--	Note to self: Essential CSS. Rewrite this shit one day. -->
-	
-	<!-- CSS SHIT -->
-	<link rel="stylesheet" type="text/css" href="../static/css/resume.css" media="all" />
-	<!--	Note to self: Essential CSS. Rewrite this shit one day. -->
-	
-	<!-- Google Analytics stuff -->
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		var pluginUrl =
-			'//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-		_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-		_gaq.push(['_setAccount', 'UA-28481260-1']);
-		_gaq.push(['_setDomainName', 'kimyounjin.com']);
-		_gaq.push(['_trackPageview']);
-
-		(function () {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 </head>
-
 <!-- 	CAUTION: The indentation in <body> is full of dragons;
 		i.e., I will one day have proper HTML formatting/spacing that doesn't make me cry every time I look at it.  -->
 
 <body>
-	<div id="doc2" class="yui-t7">
-		<div id="inner">
-
-			<div id="hd">
-				<div class="yui-gc">
-					<div class="yui-u first">
-						<h1>Jinny Kim</h1>
-						<h2><i>Aspiring Renaissance Woman</i></h2>
-					</div>
-
-					<div class="yui-u">
-						<div class="contact-info">
-							<h3 id="pdf"><a class="nounder" href="../static/JinnyKim_Resume.pdf">Print-friendly PDF</a></h3>
+    <div id="doc2" class="yui-t7">
+        <div id="inner">
+            <div id="hd">
+                <div class="yui-gc">
+                    <div class="yui-u first">
+                        <h1>Jinny Kim</h1>
+                        <h2><i>Aspiring Renaissance Woman</i></h2>
+                    </div>
+                    <div class="yui-u">
+                        <div class="contact-info">
+                            <h3 id="pdf"><a class="nounder" href="../static/resume.pdf">PDF version</a></h3>
                             <br />
                             <h3><a class="nounder" href="mailto:hire+resume@jinny.kim">hire@jinny.kim</a></h3>
-							<h3><!-- 646 - 494 - 6797--></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="bd">
-				<div id="yui-main">
-					<div class="yui-b">
-						<div class="yui-gf">
-							<div class="yui-u first">
-								<h3>Work Experience</h3>
-							</div>
-							<div class="yui-u">
-								
-								<div class="job">
-									<h2>Spotify USA Inc.</h2>
-									<h3>QA Engineer</h3>
-									<h4>05/2017 - Present<br />
-									<small>New York, NY</small></h4>
-									<p>
-									Works with developers to improve and automate test and release processes.<br />
-									Contributes to the team’s effectiveness and efficiency by setting an example of good software quality practices.<br />
-									Communicates with product and technical stakeholders of technical progress.<br />
-									Facilitates cross-team communication and collaboration.
-									</p>
-								</div>
-
-								<div class="job">
-									<h2>Kik Interactive Inc.</h2>
-									<h3>QA Analyst III</h3>
-									<h4>08/2016 - 01/2017<br />
-									<small>Waterloo, ON</small></h4>
-									<p>
-									Managed and monitored Android and iOS releases used by hundreds of millions of users worldwide.<br />
-									Ran meetings with engineering, product, and support teams for product vision and process.<br />
-									Screened and interviewed co-op and full-time candidates.<br />
-									Managed and mentored co-op students, and revamped co-op and full-time onboarding procedures.<br />
-									Tracked incoming bugs and code changes to identify quality issues and trends.
-									</p>
-								</div>
-
-								<div class="job">
-									<h2>Kik Interactive Inc.</h2>
-									<h3>Release &amp; QA Engineer / QA Analyst II</h3>
-									<h4>10/2015 - 08/2016<br />
-									<small>Waterloo, ON</small></h4>
-									<p>
-									Developed and improved the Android and iOS app submission &amp; release processes.<br />
-									Documented and reported hundreds of bugs throughout testing.<br />
-									Updated, consolidated, and maintained documentation for QA and engineering teams.<br />
-									Built dashboards to track and communicate mobile feature status and progress to the company.<br />
-									Worked closely with product and engineering managers to move features through QA and release.
-									</p>
-								</div>
-
-								<div class="job">
-									<h2>XMG Studio Inc.</h2>
-									<h3>Game Tester (Intern)</h3>
-									<h4>09/2013 - 12/2013<br />
-									<small>Toronto, ON</small></h4>
-									<p>
-									Ran test cases and wrote bug reports for pre-release versions of games for Android and iOS devices.<br />
-									Assisted with translating game builds to French, Italian, German, and Spanish.<br />
-									Improved existing test cases to increase efficiency of game testing.
-									</p>
-								</div>
-
-								<div class="job last">
-									<h2>Tenthbit, Inc.</h2>
-									<h3>QA Engineering Intern</h3>
-									<h4>04/2012 - 09/2012<br />
-									<small>Kitchener, ON</small></h4>
-									<p>
-									Rigorously tested pre-release versions of Pair for Android and iOS.<br />
-									Provided timely customer support to users via multiple channels.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="yui-gf">
-							<div class="yui-u first">
-								<h3>Projects</h3>
-							</div>
-							<div class="yui-u">
-
-								<!-- TO-DO: Finish school. Start doing more fun projects. This section looks sad and lonely. -->
-
-								<div class="job">
-									<h2><a class="nounder" href="http://github.com/younjin/PYLONS">Quin</a></h2>
-									<h3>Facebook Global Hackathon Finals 2012 Winner</h3>
-									<h4>Fall 2012</h4>
-									<p>Helped build a speech-to-text, natural language app for iOS 6 to improve the existing Facebook search.
-										<br />
-									</p>
-								</div>
-
-								<div class="job last">
-									<h2>Ninjaquote</h2>
-									<h3>Waterloo Facebook Hackathon 2012 Winner</h3>
-									<h4>Winter 2012</h4>
-									<p>Worked with a team to build the winning app that tested users' knowledge of their friends.
-										<br />
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="yui-gf">
-							<div class="yui-u first">
-								<h3>Education</h3>
-							</div>
-							<div class="yui-u job last">
-								<h2>University of Waterloo</h2>
-								<h4>2008-2015</h4>
-								<p><strong>Honours Bachelor of Mathematics</strong> in <strong>Combinatorics &amp; Optimization</strong> and <strong>Pure Mathematics</strong> (co-op)
-									<br />
-									<a class="nounder" href="http://velocity.uwaterloo.ca" target="_blank">
-										Velocity residence</a> resident, 2012 &amp; 2014.</p>
-							</div>
-
-							<div class="yui-u job last">
-								<h3>
-									Udacity:
-									<a class="nounder" href="http://www.udacity.com/course/cs271">Introduction to Artificial Intelligence</a>
-								</h3>
-								<!-- old URL of class: http://www.ai-class.com -->
-								<h4>Fall 2011</h4>
-								<p>Participated in the inaugural offering of Stanford's online Artificial Intelligence class.
-									<br /> Final mark: 91.6%, Final exam: 100%</p>
-							</div>
-						</div>
-
-					</div>
-
+                            <h3>
+                                <!-- 646 - 494 - 6797-->
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bd">
+                <div id="yui-main">
+                    <div class="yui-b">
+                        <div class="yui-gf">
+                            <div class="yui-u first">
+                                <h3>Work Experience</h3>
+                            </div>
+                            <div class="yui-u">
+                                <div class="job">
+                                    <h2>Spotify AB</h2>
+                                    <h3>Senior Software Engineer</h3>
+                                    <h4>2020 - Present<br />
+                                        <small>Stockholm, Sweden</small></h4>
+                                    <p>
+                                        Works with teams that own all of the core features in the main Spotify mobile apps (e.g. Home, Now Playing View, Playlists).<br />
+                                        Leads groups that work on improving code quality and testing culture on larger-scale projects across the company.<br />
+                                        Gives internal talks for all incoming engineers on having a good quality mindset and how to use internal quality tools.<br />
+                                        Runs workshops for non-technical colleagues on internal technical tools and collaborating with technical teams.<br />
+                                        Mentors and provides support to colleagues across the company, especially those that are newcomers, non-technical, early in their career, neurodiverse, and/or are part of marginalised groups.<br />
+                                        Contributes heavily to the mental health and neurodiversity communities at Spotify.
+                                    </p>
+                                </div>
+                                <div class="job">
+                                    <h2>Spotify USA Inc.</h2>
+                                    <h3>Software Engineer</h3>
+                                    <h4>2017 - 2019<br />
+                                        <small>New York, NY, USA</small></h4>
+                                    <p>
+                                        Provided guidance and established practices to improve code quality and make teams more efficient.<br />
+                                        Worked on projects involving major design updates, adding new languages, and user conversion.<br />
+                                        Participated in and won two annual company-wide hack weeks (2017, 2018).
+                                    </p>
+                                </div>
+                                <div class="job">
+                                    <h2>Kik Interactive Inc.</h2>
+                                    <h3>QA Analyst III</h3>
+                                    <h4>2016 - 2017<br />
+                                        <small>Waterloo, ON, Canada</small></h4>
+                                    <p>
+                                        Managed and monitored Android and iOS releases used by hundreds of millions of users worldwide.<br />
+                                        Ran meetings with engineering, product, and support teams for product vision and process.<br />
+                                        Screened and interviewed co-op and full-time candidates.<br />
+                                        Managed and mentored co-op students, and revamped co-op and full-time onboarding procedures.<br />
+                                        Tracked incoming bugs and code changes to identify quality issues and trends.
+                                    </p>
+                                </div>
+                                <div class="job last">
+                                    <h2>Kik Interactive Inc.</h2>
+                                    <h3>Release &amp; QA Engineer</h3>
+                                    <h4>2015 - 2016<br />
+                                        <small>Waterloo, ON, Canada</small></h4>
+                                    <p>
+                                        Developed and improved the Android and iOS app submission &amp; release processes.<br />
+                                        <!-- Documented and reported hundreds of bugs throughout testing.<br /> -->
+                                        Updated, consolidated, and maintained documentation for QA and engineering teams.<br />
+                                        Built dashboards to track and communicate mobile feature status and progress to the company.<br />
+                                        Worked closely with product and engineering managers to move features through QA and release.
+                                    </p>
+                                </div>
+                                <!--                                 <div class="job">
+                                    <h2>XMG Studio Inc.</h2>
+                                    <h3>Game Tester (Intern)</h3>
+                                    <h4>09/2013 - 12/2013<br />
+                                        <small>Toronto, ON</small></h4>
+                                    <p>
+                                        Ran test cases and wrote bug reports for pre-release versions of games for Android and iOS devices.<br />
+                                        Assisted with translating game builds to French, Italian, German, and Spanish.<br />
+                                        Improved existing test cases to increase efficiency of game testing.
+                                    </p>
+                                </div>
+                                <div class="job last">
+                                    <h2>Tenthbit, Inc.</h2>
+                                    <h3>QA Engineering Intern</h3>
+                                    <h4>04/2012 - 09/2012<br />
+                                        <small>Kitchener, ON</small></h4>
+                                    <p>
+                                        Rigorously tested pre-release versions of Pair for Android and iOS.<br />
+                                        Provided timely customer support to users via multiple channels.
+                                    </p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="yui-gf">
+                            <div class="yui-u first">
+                                <h3>Projects</h3>
+                            </div>
+                            <div class="yui-u">
+                                <!-- TO-DO: Finish school. Start doing more fun projects. This section looks sad and lonely. -->
+                                <div class="job">
+                                    <h2><a class="nounder" href="http://github.com/younjin/PYLONS">Quin</a></h2>
+                                    <h3>Facebook Global Hackathon Finals 2012 Winner</h3>
+                                    <h4>Fall 2012</h4>
+                                    <p>Built a speech-to-text, natural language app for iOS 6 to improve the existing Facebook search.
+                                        <br />
+                                    </p>
+                                </div>
+                                <div class="job last">
+                                    <h2>Ninjaquote</h2>
+                                    <h3>Waterloo Facebook Hackathon 2012 Winner</h3>
+                                    <h4>Winter 2012</h4>
+                                    <p>Built the winning app that tested users' knowledge of their friends.
+                                        <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yui-gf">
+                            <div class="yui-u first">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="yui-u job last">
+                                <h2>University of Waterloo</h2>
+                                <h4>2008-2015</h4>
+                                <p><strong>Honours Bachelor of Mathematics</strong> in <strong>Combinatorics &amp; Optimization</strong> and <strong>Pure Mathematics</strong> (co-op)
+                                    <br />
+                                    <a class="nounder" href="http://velocity.uwaterloo.ca" target="_blank">
+                                        Velocity residence</a> resident, 2012 &amp; 2014.</p>
+                            </div>
+                            <div class="yui-u job last">
+                                <h3>
+                                    Udacity:
+                                    <a class="nounder" href="http://www.udacity.com/course/cs271">Introduction to Artificial Intelligence</a>
+                                </h3>
+                                <!-- old URL of class: http://www.ai-class.com -->
+                                <h4>Fall 2011</h4>
+                                <p>Participated in the inaugural offering of Stanford's online Artificial Intelligence class.
+                                    <br /> Final mark: 91.6%, Final exam: 100%</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="yui-gf last">
-						<div class="yui-u first">
-							<h3>Awards &amp; Certifications</h3>
-						</div>
-						<div class="yui-u smalllines">
-							<h5>TD Bank Group Scholarship		 						&#xA0; &#x2022; &#xA0;
-								Dr. Paul D. Steinhauer Scholarship				 		&#xA0; &#x2022; &#xA0;
-								Engineering Society 'A' President's Award
-							</h5>
-							<h5>
-								The Dominion Scholarship				 				&#xA0; &#x2022; &#xA0;
-								Government of Canada Physical and Security Clearance 	&#xA0; &#x2022; &#xA0;
-								Time <a href="http://en.wikipedia.org/wiki/You_%28Time_Person_of_the_Year%29" class="nounder">Person of the Year (2006)</a>
-							</h5>
-						</div>
-					</div>
-					<div class="yui-gf last">
-						<div class="yui-u first">
-							<h3>Interests</h3>
-						</div>
-						<div class="yui-u">
-							<h3>Art &amp; Design	 &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
-								Cooking				 &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
-								Languages			 &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
-								Pedagogy			 &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
-								Rock Climbing		 &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
-								Reading		 		 &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
-								Travel
-							</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="ft">
-				<center>
-					<h4>
+                        <div class="yui-u first">
+                            <h3>Awards &amp; Certifications</h3>
+                        </div>
+                        <div class="yui-u smalllines">
+                            <h5>TD Bank Group Scholarship &#xA0; &#x2022; &#xA0;
+                                Dr. Paul D. Steinhauer Scholarship &#xA0; &#x2022; &#xA0;
+                                Engineering Society 'A' President's Award
+                            </h5>
+                            <h5>
+                                The Dominion Scholarship &#xA0; &#x2022; &#xA0;
+                                Government of Canada Physical and Security Clearance &#xA0; &#x2022; &#xA0;
+                                Time <a href="http://en.wikipedia.org/wiki/You_%28Time_Person_of_the_Year%29" class="nounder">Person of the Year (2006)</a>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="yui-gf last">
+                        <div class="yui-u first">
+                            <h3>Interests</h3>
+                        </div>
+                        <div class="yui-u">
+                            <h3>
+                            	Art &amp; Design &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
+                                Food &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
+                                Languages &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
+                                Gardening &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
+                                Mental Health &amp; Neurodiversity &#xA0;&#xA0; &#x2022; &#xA0;&#xA0;
+                                Travel
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ft">
+               <!--  <center>
+                    <h4>
                         <a class="nounder" href="mailto:hire+resume@jinny.kim">hire@jinny.kim</a>
-					</h4>
-				</center>
-				<a id="shuriken" href="http://heyyeyaaeyaaaeyaeyaa.com/"><img src="../static/img/shuriken.png" /></a>
-			</div>
-		</div>
-	</div>
+                    </h4>
+                </center> -->
+                <a id="shuriken"><img src="../static/img/shuriken.png" /></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
