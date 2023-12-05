@@ -2,8 +2,9 @@
 <html>
 
 <head>
+
   <title>Jinny Kim</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="static/css/style.css" type="text/css">
   </link>
   <!-- Google tag (gtag.js) -->
@@ -19,19 +20,51 @@
 </head>
 
 <body>
-  <h1 class="title">JINNY KIM</h1>
   <div class="content">
-    <ul class="links">
-      <li class='blog'><a href="" class="front"></a><a href="#" class='back'>Blog</a></li>
-      <li class='twitter'><a href="http://twitter.com/younjin" class="front"></a><a href="http://twitter.com/younjin"
-          class='back'>Twitter</a></li>
-      <li class='github'><a href="https://github.com/younjin/" class="front"></a><a href="https://github.com/younjin/"
-          class='back'>Github</a></li>
-      <li class="resume"><a href="resume" class="front"></a><a href="resume" class='back'>R&eacute;sum&eacute;</a></li>
-      <li class="email"><a href="mailto:hello@kimyounjin.com" class="front"></a><a href="mailto:hello@kimyounjin.com"
-          class='back'>Email</a></li>
-    </ul>
+    <h1 id="title" class="title">Jinny Kim </h1>
+
+    <script>
+      var index = Number.parseInt(localStorage.getItem("index")) || 0;
+      var emojis = [
+        '\u{1F642}',
+        '\u{1F978}',
+        '\u{1F609}',
+        '\u{1F9D0}',
+        '\u{1F601}',
+        '\u{1F634}',
+        '\u{1F605}',
+        '\u{1F643}',
+        '\u{1F636}',
+        '\u{1F62C}',
+        '\u{1F972}',
+      ];
+      var emoji = emojis[index % emojis.length];
+      // Append a random emoji to the #title element
+      const titleElement = document.getElementById("title");
+      titleElement.textContent += emoji;
+
+      localStorage.setItem("index", (index + 1) + "");
+    </script>
+
+    <nav>
+      <ul class="links">
+        <li class='twitter'>
+          <a href="http://twitter.com/younjin">Twitter</a>
+        </li>
+        <li class='github'>
+          <a href="https://github.com/younjin/">Github</a>
+        </li>
+        <li class="resume">
+            <a href="resume">R&eacute;sum&eacute;</a>
+        </li>
+        <li class="email">
+          <a href="mailto:hello@kimyounjin.com">Email</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+
+  <footer>Made by <a href="https://jeppes.github.io">jeppes</a> 👋</footer>
 </body>
 
 </html>
