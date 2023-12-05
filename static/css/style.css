@@ -1,255 +1,113 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: #BDC3C7;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block; }
-
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
 body {
-    line-height: 1; }
-
-ol, ul {
-    list-style: none; }
-
-blockquote, q {
-    quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none; }
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0; }
-
-/**/
-
-html {
-    background-image: url(../img/project_papper.png);
-    min-width: 500px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
 }
 
-body {
-    font-family: 'Lato';
-    width: auto;
-    padding: 10px;
-    margin: 150px auto;
-/*    width: 300px;*/
-    /*background-color: #FFF;*/
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius:10px;
-    margin-bottom: 2em;
-    border-left: 40px;
-    border-right: 40px;
-    border-bottom: 1px;/* solid #ccc;*/
-}
+/* END: CSS Reset */
 
-h1.title {
-    color: #95A5A6;
-    font-size: 110px;
-    font-family: "Lato", serif;
-    letter-spacing: 5px;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
+html, body {
+  height: 100%;
+
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+} 
+
+body {
+  background: #0b0b0b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-transform: lowercase;
 }
 
 .content {
-    font-family: 'Lato', serif;
-    margin: auto;
-    /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 32px;
+
+  animation: fade-in 0.5s ease-in-out;
+  transform-origin: center;
 }
 
-.content > * {
-    margin: 20px 0;
+
+@keyframes fade-in {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.content .links li {
-    margin: 5px 0;
+
+.title {
+   text-align: center;
+   width: 100%;
+   font-size: 3rem;
 }
 
-.content .links li.last {
-    margin-top: 20px;
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  padding-left:0;
+  font-size: 1.25rem;
 }
 
-.content a {
-    font-family: 'Lato';
-    color: #BDC3C7;
+::selection {
+  background-color: rgba(100, 100, 255, 0.5);
 }
 
-.content .links {
-    text-align: center;
+a, a:visited {
+  color: #44A5E5;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #4573E6;
 }
 
-.content ul.links {
-    margin: 0 auto;
-    width: 600px;
-    text-align: center;
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 }
 
-.content ul.links li {
-    width: 100px;
-    height: 100px;
-    float: left;
-    position: relative;
-}
-
-.content ul.links li {
-    cursor: pointer;
-}
-
-.content ul.links li a {
-    font-family: 'Lato';
-    color: #BDC3C7;
-    width: 100px;
-    height: 62px;
-    display: block;
-    background-repeat: no-repeat;
-    padding-top: 38px;
-    font-size: 20px;
-    text-decoration: none;
-
-    float: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 900;
-
-    -o-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-
-    cursor: pointer;
-}
-
-.content ul.links li a.front, .content ul.links li:hover a.back {
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-
-    -moz-transform: rotateX(0deg) rotateY(0deg);
-    -moz-transform-style: preserve-3d;
-    -moz-backface-visibility: hidden;
-}
-
-.content ul.links li a.back, .content ul.links li:hover a.front {
-    -webkit-transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-
-    -moz-transform: rotateY(-180deg);
-    -moz-transform-style: preserve-3d;
-    -moz-backface-visibility: hidden;
-
-    color: rgba(0, 0, 0, 0);
-}
-
-.content ul.links li {
-    margin-left: 25px;
-}
-.content ul.links li:first-child {
-    margin-left: 0;
-}
-
-.content ul.links li.blog a.front { background-image: url(../img/blog.png); }
-.content ul.links li.twitter a.front { background-image: url(../img/twitter.png); }
-.content ul.links li.github a.front { background-image: url(../img/github.png); }
-.content ul.links li.resume a.front { background-image: url(../img/resume.png); }
-.content ul.links li.email a.front { background-image: url(../img/email.png); }
-
-.content ul.links li.blog a.back { background-image: url(../img/blog_words.png); }
-.content ul.links li.twitter a.back { background-image: url(../img/twitter_words.png); }
-.content ul.links li.github a.back { background-image: url(../img/github_words.png); }
-.content ul.links li.resume a.back { background-image: url(../img/resume_words.png); }
-.content ul.links li.email a.back { background-image: url(../img/email_words.png); }
-
-@media only screen and (max-width: 480px), only screen and (max-device-width: 640px) {
-
-    html {
-        min-width: 320px;
-        padding: 0;
-        margin: 0;
-    }
-
-    body {
-        margin: 20px auto;
-        padding: 0;
-    }
-
-    h1.title {
-        font-size: 50px;
-        max-width: 320px;
-        margin: 20px auto;
-    }
-
-    .content ul.links {
-        margin: 0 auto;
-        width: 320px;
-        text-align: center;
-    }
-
-    .content ul.links li {
-        width: 100%;
-        height: 48px;
-        float: none;
-        position: relative;
-    }
-
-    .content ul.links li a {
-        color: #BDC3C7;
-        width: 60%;
-        margin: 0 auto;
-        height: 40px;
-        display: block;
-        background-repeat: no-repeat;
-        padding-top: 0;
-/*
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -o-border-radius: 15px;
-*/
-        float: none;
-        position: relative;
-        top: auto;
-        left: auto;
-
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 30px;
-        padding-top: 8px;
-    }
-
-    .content ul.links li a.front, .content ul.links li a.back {
-        -webkit-transform: none;
-        -moz-transform: none;
-        background-image: none;
-        color: rgba(255, 255, 255, 0.7);
-        text-transform: lowercase;
-    }
-
-    .content ul.links li a.front {
-        display: none;
-    }
-
-    .content ul.links li {
-        margin-left: 0;
-    }
-    .content ul.links li:first-child {
-        margin-left: 0;
-    }
-
-    .content ul.links li.blog    a.back { background-image: none; background-color: #9b59b6; }
-    .content ul.links li.twitter a.back { background-image: none; background-color: #2980b9; }
-    .content ul.links li.github  a.back { background-image: none; background-color: #27ae60; }
-    .content ul.links li.resume  a.back { background-image: none; background-color: #c0392b; }
-    .content ul.links li.email   a.back { background-image: none; background-color: #d35400; }
+footer:hover {
+  opacity: 1;
 }
